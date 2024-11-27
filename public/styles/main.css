@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+}
+
+.container {
+    display: flex;
+    padding: 24px 32px;
+    height: 100vh;
+    font-weight: 400;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    background-color: #BFBFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #7F7F7F;
+}
+
+form {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #AFABAB;
+    text-align: center;
+    border-top: 1px solid #7F7F7F;
+    border-bottom: 1px solid #7F7F7F;
+}
+
+form h1 {
+    font-weight: normal;
+}
+
+form input {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 40%;
+    font-size: 16px;
+    text-align: center;
+    background-color: #D9D9D9;
+    border: 1px solid #7F7F7F;
+}
+
+::placeholder {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+main {
+    width: 80%;
+    background-color: #E7E6E6;
+    overflow-y: scroll;
+    border-top: 2px solid #7F7F7F;
+    border-bottom: 2px solid #7F7F7F;
+    border-right: 2px solid #7F7F7F;
+}
+
+ul {
+    width: 100%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 48px;
+    background-color: #AFABAB;
+    color: black;
+    list-style: none;
+    border: 1px solid #7F7F7F;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #D0CECE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #A6A6A6;
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 40%;
+    }
+
+    form h1 {
+        font-size: 16px;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    ul {
+        padding: 24px;
+    }
+}
